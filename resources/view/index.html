@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toolzz - Login</title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="left-section">
+                <div class="nocturnal">
+                    <div class="nocturnal-left">
+                        <img src="../../image/icon-button-light.png" alt="return">
+                    </div>
+                    <div class="nocturnal-right">
+                        <img src="../../image/icon-button-light (1).png" alt="moon" onclick="nocturnal()">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-item active">
+                        <div class="container-text-curso">Cursos</div>
+                        <div class="container-text" id="container-text ">
+                            <h3>Plataforma de cursos completa</h3>
+                            <p>Lorem ipsum nisl etiam himenaeos ligula augue vehicula gravida tincidunt, etiam magna sapien gravida sodales sed vel pulvinar suspendisse, morbi mi proin urna ornare posuere donec aptent. orci vivamus primis fusce lacinia libero nostra aliquam vestibulum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="login-form">
+                    <div class="login-from-header">
+                        <div class="login-from-header-left">
+                            <img src="../../image/Group_66_5_.png" alt="logo">
+                            <img src="../../image/Grupo 125.png" alt="logo">
+                        </div>
+                        <div class="login-from-header-left-2">
+                            <img src="../../image/switch-icon-light.png" alt="return">
+                        </div>
+                        <div class="login-from-header-right">
+                            <a id="login-from-header-right-link">Criar conta</a>
+                        </div>
+                    </div>
+                    <h1 id="login-form-texto-1">Boas-vindas!</h1>
+                    <p id="login-form-texto-2">Entre utilizando uma das opções abaixo</p>
+                    <div class="social-login">
+                        <button class="social-button">Tz</button>
+                        <button class="social-button">F</button>
+                        <button class="social-button">A</button>
+                        <button class="social-button">T</button>
+                    </div>
+                    <p>ou</p>
+                    <form method="POST" action="">
+                        <label for="username" id="login-form-name">Usuário</label>
+                        <input type="text" id="username" name="username" placeholder="aluno290_1u">
+                        
+                        <label for="password" id="login-form-password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="*******">
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="stay-connected" name="stay-connected">
+                            <label for="stay-connected" id="stay-connected-text">Manter conectado</label>
+                        </div>
+
+                        <div class="captcha-container">
+                            <div class="captcha-info">
+                                <div class="h-captcha" data-sitekey="tu_site_key"></div>
+                            </div>
+                        </div>
+
+                        <button onclick="envidarDados()" type="button">Entrar</button>
+                        <div class="message">
+                            <p id="data"></p>
+                        </div>
+                    </form>
+                    <a href="#" class="forgot-password">Esqueceu sua senha? Recuperar senha</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="../js/login.js"></script>
+<script src="https://hcaptcha.com/1/api.js" async defer></script>
